@@ -1,0 +1,9 @@
+.StudyListWrap {
+  background-color: #fff;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));
+  gap: 25px;
+}

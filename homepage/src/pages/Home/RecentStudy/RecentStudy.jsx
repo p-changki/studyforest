@@ -1,3 +1,4 @@
+import { EmptyState } from "../EmptyState/EmptyState";
 import styles from "./RecentStudy.module.scss";
 
 export function RecentStudy({ recentStudies, onReset }) {
@@ -6,7 +7,7 @@ export function RecentStudy({ recentStudies, onReset }) {
       <h2>현재 조회 스터디</h2>
       <button onClick={onReset}>초기화</button>
       {recentStudies.length === 0 ? (
-        <p>현재 선택된 스터디가 없습니다.</p>
+        <EmptyState message="현재 선택된 스터디가 없습니다." />
       ) : (
         <div>
           <ul>

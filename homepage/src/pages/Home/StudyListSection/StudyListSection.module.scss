@@ -7,3 +7,23 @@
   grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));
   gap: 25px;
 }
+
+.searchWrap {
+  margin-bottom: 1rem;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+
+  &:focus {
+    outline: none;
+    border-color: #99c08e;
+    box-shadow: 0 0 4px rgba(153, 192, 142, 0.3);
+  }
+}

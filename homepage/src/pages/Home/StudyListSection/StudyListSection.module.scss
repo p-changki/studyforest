@@ -1,10 +1,8 @@
-/* 공통 섹션 기본 스타일 */
 .section {
   background-color: #fff;
   padding: 2rem 0;
 }
 
-/* 제목 영역 */
 .header {
   display: flex;
   justify-content: space-between;
@@ -19,14 +17,12 @@
   color: #333;
 }
 
-/* 검색창 or 버튼 위치 */
 .actions {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-/* 검색 input */
 .searchInput {
   width: 240px;
   padding: 0.5rem 0.8rem;
@@ -42,7 +38,6 @@
   }
 }
 
-/* 카드 영역 */
 .cardGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));
@@ -50,10 +45,11 @@
   padding: 0 1rem;
 }
 
-/* footer 영역 */
 .footer {
   text-align: center;
   margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .moreBtn {

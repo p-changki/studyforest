@@ -1,21 +1,35 @@
-.StudyListWrap {
+/* 공통 섹션 기본 스타일 */
+.section {
   background-color: #fff;
+  padding: 2rem 0;
 }
 
-.cardGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));
-  gap: 25px;
+/* 제목 영역 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 0 1rem;
 }
 
-.searchWrap {
-  margin-bottom: 1rem;
+.title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
 }
 
+/* 검색창 or 버튼 위치 */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* 검색 input */
 .searchInput {
-  width: 100%;
-  max-width: 400px;
-  padding: 0.6rem 1rem;
+  width: 240px;
+  padding: 0.5rem 0.8rem;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 0.95rem;
@@ -25,5 +39,35 @@
     outline: none;
     border-color: #99c08e;
     box-shadow: 0 0 4px rgba(153, 192, 142, 0.3);
+  }
+}
+
+/* 카드 영역 */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));
+  gap: 25px;
+  padding: 0 1rem;
+}
+
+/* footer 영역 */
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.moreBtn {
+  background-color: #99c08e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:hover {
+    background-color: #7ea874;
   }
 }

@@ -1,11 +1,39 @@
 import styles from "./StudyCard.module.scss";
 
-export function StudyCard({ title, members, description, onClick }) {
+export function StudyCard({
+  owner,
+  title,
+  progressDays,
+  description,
+  points,
+  members,
+  fireCount,
+  heartCount,
+  onClick,
+}) {
   return (
-    <div className={styles.StudyCardWrap} onClick={onClick}>
-      <h3 className={styles.title}>{title}</h3>
-      <p className={styles.members}>{members}</p>
+    <article className={styles.card} onClick={onClick}>
+      <header className={styles.header}>
+        <h3 className={styles.title}>
+          <strong className={styles.owner}>{owner}</strong> 의 {title}
+        </h3>
+        <div className={styles.badge}>🍃 {points}P 획득</div>
+      </header>
+
+      <p className={styles.progress}>{progressDays}일째 진행 중</p>
       <p className={styles.description}>{description}</p>
-    </div>
+
+      <footer className={styles.reactionBar}>
+        <div className={styles.reaction}>
+          <span>👩‍💻</span> {members}
+        </div>
+        <div className={styles.reaction}>
+          <span>🔥</span> {fireCount}
+        </div>
+        <div className={styles.reaction}>
+          <span>🤍</span> {heartCount}
+        </div>
+      </footer>
+    </article>
   );
 }

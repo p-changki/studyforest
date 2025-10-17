@@ -7,7 +7,6 @@ export function EmojiPicker({ onSelect }) {
 
   return (
     <div style={{ position: "relative" }}>
-      {/* 이모지 선택 버튼 */}
       <button
         style={{
           backgroundColor: "#99c08e",
@@ -22,7 +21,6 @@ export function EmojiPicker({ onSelect }) {
         😀 이모지 선택
       </button>
 
-      {/* emoji-mart Picker */}
       {visible && (
         <div style={{ position: "absolute", zIndex: 10, marginTop: "10px" }}>
           <Picker
